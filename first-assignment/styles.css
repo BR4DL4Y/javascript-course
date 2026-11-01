@@ -123,29 +123,19 @@ a {
   max-width: 100%;
 }
 
-@media (max-width: 600px) {
-  body {
-    padding: 15px; /* Reduce los bordes generales de la página */
-  }
-
-  h1, h2 {
-    font-size: 1.8rem; /* Títulos más pequeños para que no se desborden */
-    padding: 0.5rem;
-  }
-
+media (max-width: 600px) {
   .figures {
-    gap: 30px; /* Reduce el espacio exagerado entre figuras en móvil */
+    gap: 15px;
   }
-
-  /* Si quieres que se adapten un poco mejor en pantallas muy pequeñas */
+  
   .circle-shape, .square-shape {
-    width: 120px;
-    height: 120px;
+    width: 85px;
+    height: 85px;
   }
 
   .triangle-shape {
-    border-left: 60px solid transparent;  
-    border-right: 60px solid transparent;  
-    border-bottom: 110px solid #89B4FA;
+    border-left: 42px solid transparent;  
+    border-right: 42px solid transparent;  
+    border-bottom: 75px solid #89B4FA;
   }
 }
