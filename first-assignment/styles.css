@@ -65,6 +65,8 @@ footer {
   gap: 60px;               
   margin-top: 20px;
   transition: transform 0.3s ease-out;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .circle-shape {
@@ -116,3 +118,29 @@ hr {
 a {
   color: #F5C2E7;
 }
+
+.circle-shape, .square-shape, .triangle-shape {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px; 
+  }
+
+  .figures {
+    flex-direction: column; 
+    gap: 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.8rem; 
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    gap: 10px; 
+  }
+}
+
