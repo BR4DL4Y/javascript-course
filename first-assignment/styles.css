@@ -121,5 +121,31 @@ a {
 
 .circle-shape, .square-shape, .triangle-shape {
   max-width: 100%;
-  height: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px; /* Reduce los bordes generales de la página */
+  }
+
+  h1, h2 {
+    font-size: 1.8rem; /* Títulos más pequeños para que no se desborden */
+    padding: 0.5rem;
+  }
+
+  .figures {
+    gap: 30px; /* Reduce el espacio exagerado entre figuras en móvil */
+  }
+
+  /* Si quieres que se adapten un poco mejor en pantallas muy pequeñas */
+  .circle-shape, .square-shape {
+    width: 120px;
+    height: 120px;
+  }
+
+  .triangle-shape {
+    border-left: 60px solid transparent;  
+    border-right: 60px solid transparent;  
+    border-bottom: 110px solid #89B4FA;
+  }
 }
