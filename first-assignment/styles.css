@@ -1,0 +1,118 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background-color: #181825;
+  text-align: center;
+  color: #CDD6F4;
+}
+
+header {
+  background: linear-gradient(to right, #89B4FA, #F5C2E7);
+  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #181825;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+h1, h2 {
+  padding: 1.2rem;
+  margin: 0.8rem;
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+p::first-letter {
+  font-size: 2.5rem;
+  color: #FAB387;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {
+  margin: 0.9rem;
+  padding: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.figures {
+  display: flex;
+  justify-content: center; 
+  gap: 60px;               
+  margin-top: 20px;
+  transition: transform 0.3s ease-out;
+}
+
+.circle-shape {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  background-color: #89B4FA;
+}
+
+.square-shape {
+  width: 160px;
+  height: 160px;
+  background-color: #89B4FA;
+}
+
+.triangle-shape {
+  width: 0;                    
+  height: 0;                    
+  background-color: transparent;
+  border-left: 80px solid transparent;  
+  border-right: 80px solid transparent;  
+  border-bottom: 140px solid #89B4FA;
+}
+
+nav li a:hover{
+  color: #FFFFFF;
+  transition: color 0.3s ease-in;
+}
+header:hover {
+  background: linear-gradient(to right, #89B4FA, #F5C2E7);
+  transition: background 0.4s ease-in;
+}
+
+.circle-shape, .square-shape, .triangle-shape {
+  transition: transform 0.3s ease-in-out; 
+}
+.circle-shape:hover, .square-shape:hover, .triangle-shape:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; 
+}
+
+hr {
+  border: none;                     
+  height: 2px;                     
+  background: linear-gradient(to right, transparent, #89B4FA, transparent); /* Un degradado que se desvanece a los lados */
+  margin: 40px auto;                
+  width: 80%;                       
+}
+a {
+  color: #F5C2E7;
+}
