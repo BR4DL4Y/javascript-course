@@ -123,24 +123,3 @@ a {
   max-width: 100%;
   height: auto;
 }
-
-@media (max-width: 600px) {
-  body {
-    padding: 15px; 
-  }
-
-  .figures {
-    flex-direction: column; 
-    gap: 15px;
-  }
-
-  h1, h2 {
-    font-size: 1.8rem; 
-    padding: 0.5rem;
-  }
-
-  nav ul {
-    gap: 10px; 
-  }
-}
-
